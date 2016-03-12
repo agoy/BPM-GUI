@@ -1,0 +1,41 @@
+{
+  "name": "BPM-GUI",
+  "version": "1.0.0",
+  "repository": "http://github.com/agoy/BPM-GUI",
+  "description": "BPM-GUI",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash": "^4.6.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "yua": "^0.1.10"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "browserify": "^13.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "lodash": "^4.6.1",
+    "tsify": "^0.14.1",
+    "typescript": "^1.8.7",
+    "typings": "^0.7.8",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/gulp bundle",
+    "watch": "./node_modules/.bin/gulp"
+  },
+  "author": "Alexandre Goy",
+  "license": "MIT"
+}

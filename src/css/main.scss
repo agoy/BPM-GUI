@@ -1,0 +1,15 @@
+body, html {
+    font-family: Helvetica Neue, Arial, verdana, sans;
+}
+.main-view {
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 10px;
+    display: inline-block;
+    background: #eee;
+    user-select: none;
+}

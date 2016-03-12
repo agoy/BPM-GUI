@@ -1,14 +1,12 @@
 import * as React from 'react';
 
 import {
-    State,
-    SomeData,
-    sharedController as C
-} from '../controllers/main';
+    Actions, store
+} from '../stores/main';
 
 
 export interface Props {
-    foo?: SomeData;
+    a?: number;
 }
 
 export interface State {
@@ -19,12 +17,12 @@ export class View extends React.Component<Props, State> {
 
 
     private increment = () => {
-        C.incrementFoo();
+        store.dispatch({type: Actions.INCREMENT});
     }
 
     render() {
 
-        var a = this.props.foo.a;
+        var a = this.props.a;
 
         return (
             <div>
